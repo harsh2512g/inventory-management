@@ -1,0 +1,428 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap");
+
+@import "tailwindcss";
+
+.custom-handle {
+  width: 10px;
+  /* Width of the handle */
+  background-color: #ccc;
+  /* Color of the handle */
+  cursor: ew-resize;
+  /* Cursor style */
+  position: absolute;
+  right: -5px;
+  /* Positioning the handle */
+  top: 0;
+  height: 100vh;
+  /* Full height */
+}
+
+body {
+  font-family: 'Figtree', sans-serif;
+}
+
+.h-screen {
+  background-image: url('/bgPatternWhite.png');
+  background-size: cover;
+  background-position: center;
+  background-color: #c5c4c4;
+  background-blend-mode: overlay;
+}
+
+.bg-pattern-white {
+  background-color: white;
+  background-blend-mode: lighten;
+  /* Or use overlay/soft-light */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 4px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: rgba(199, 199, 199, 0.5);
+  border-radius: 10px;
+}
+
+.scrollbar-thick::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scrollbar-thick::-webkit-scrollbar-thumb {
+  background-color: #b8b3b3;
+  border-radius: 10px;
+}
+
+
+@keyframes loading {
+  40% {
+    background-position: 100% 0;
+  }
+
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.skeleton-table {
+  position: relative;
+
+  .bar {
+    background-color: #e7e7e7;
+    height: 14px;
+    border-radius: 7px;
+    width: 80%;
+  }
+
+  &:after {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 24px;
+    background-image: linear-gradient(100deg,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0.5) 60%,
+        rgba(255, 255, 255, 0) 80%);
+    background-size: 200px 24px;
+    background-position: -100px 0;
+    background-repeat: no-repeat;
+    animation: loading 1s infinite;
+  }
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+}
+
+.blackSelect {
+  .css-13cymwt-control {
+    background-color: #ffffff;
+    font-size: 14px;
+    color: #000000;
+    font-weight: 600;
+    border-color: #000000;
+    border-radius: 0px;
+    width: 100%;
+  }
+
+  .css-t3ipsp-control {
+    background-color: #ffffff;
+    font-size: 14px;
+    color: #000000;
+    font-weight: 600;
+    border-color: #000000;
+    border-width: 2px;
+    border-radius: 0px;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .css-t3ipsp-control:hover {
+    background-color: #ffffff;
+    font-size: 14px;
+    color: #000000;
+    font-weight: 600;
+    border-color: #000000;
+    border-radius: 0px;
+    border-width: 2px;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .css-13cymwt-control:hover {
+    background-color: #ffffff;
+    font-size: 14px;
+    color: #000000;
+    font-weight: 600;
+    border-color: #000000;
+    border-radius: 0px;
+    width: 100%;
+  }
+
+  .css-1nmdiq5-menu {
+    cursor: pointer;
+    font-size: 14px;
+    color: #000000;
+    font-weight: 500;
+    background-color: #ffffff;
+    border-color: #000000;
+    border-width: 2px;
+    border-radius: 0px;
+
+    width: 100%;
+  }
+
+  .css-tr4s17-option {
+    background-color: #000000;
+
+    cursor: pointer;
+  }
+
+  .css-d7l1ni-option {
+    background-color: #edeff3;
+
+    cursor: pointer;
+  }
+
+  .css-1nmdiq5-menu div::-webkit-scrollbar {
+    width: 6px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+  }
+
+  .css-1nmdiq5-menu div::-webkit-scrollbar-thumb {
+    background-color: #332e2e;
+    border-radius: 10px;
+  }
+
+  .css-1nmdiq5-menu div::-webkit-scrollbar-track {
+    background-color: #e9e3e3;
+    border-radius: 10px;
+  }
+
+  .css-1u9des2-indicatorSeparator {
+    display: none;
+  }
+
+  .css-1xc3v61-indicatorContainer {
+    color: #000000;
+  }
+
+  .css-15lsz6c-indicatorContainer {
+    color: #000000;
+  }
+
+  .css-15lsz6c-indicatorContainer:hover {
+    color: #000000;
+  }
+
+  .css-1xc3v61-indicatorContainer:hover {
+    color: #000000;
+  }
+}
+
+.blackSelectborder {
+  .css-13cymwt-control {
+    border-width: 2px !important;
+    min-height: 40px !important;
+  }
+}
+
+#selectError {
+
+  .css-13cymwt-control,
+  .select__control {
+    border-color: #FF0000 !important;
+  }
+
+  .css-t3ipsp-control:hover {
+    border-color: #FF0000 !important;
+  }
+
+}
+
+.selectLimit .whiteSelect {
+
+  .css-13cymwt-control,
+  .select__control {
+    background-color: #ffffff !important;
+  }
+}
+
+#selectDisabledError {
+
+  .css-13cymwt-control,
+  .select__control {
+    background-color: #f2f2f5;
+    cursor: not-allowed;
+    opacity: 0.6;
+    border-color: #FF0000;
+  }
+}
+
+#selectDisabled {
+
+  .css-13cymwt-control,
+  .select__control,
+  disabled-input {
+    background-color: #f2f2f5;
+    cursor: not-allowed;
+
+    opacity: 0.6;
+  }
+}
+
+.table-container {
+  position: relative;
+  overflow-x: auto;
+}
+
+.table-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50px;
+  /* Adjust width of fade effect */
+  background: linear-gradient(to right,
+      rgba(41, 40, 40, 0),
+      rgb(241, 241, 241) 100%);
+  pointer-events: none;
+  /* Allows clicking through the overlay */
+}
+
+.graySelect {
+  .css-1jqq78o-placeholder {
+
+    color: #B9C0D4;
+
+  }
+
+  .css-13cymwt-control,
+  .select__control--is-disabled {
+    background-color: #F9F9FB;
+    font-size: 14px;
+    color: #111322;
+    font-weight: 400;
+    border-color: #DCDFEA;
+    cursor: pointer;
+    min-height: 44px;
+    border-radius: 8px;
+    padding-left: 6px;
+    padding-right: 8px;
+    width: 100%;
+  }
+
+  .css-t3ipsp-control {
+    background-color: #F9F9FB;
+    font-size: 14px;
+    color: #111322;
+    font-weight: 400;
+    border-color: #DCDFEA;
+    cursor: pointer;
+    min-height: 44px;
+    padding-left: 6px;
+    padding-right: 8px;
+    border-width: 2px;
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .css-t3ipsp-control:hover {
+    background-color: #F9F9FB;
+    font-size: 14px;
+    color: #111322;
+    font-weight: 400;
+    border-color: #5D6B98;
+    border-radius: 8px;
+    border-width: 2px;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .select__control--is-focused,
+  .select__control--menu-is-open {
+    border-color: #5D6B98;
+
+  }
+
+  .css-13cymwt-control:hover {
+    background-color: #F9F9FB;
+    font-size: 14px;
+    color: #111322;
+    font-weight: 400;
+    border-color: #7D89B0;
+    border-radius: 8px;
+    border-width: 1px;
+    width: 100%;
+  }
+
+  .css-1nmdiq5-menu {
+    cursor: pointer;
+    font-size: 14px;
+    color: #111322;
+    font-weight: 400;
+    background-color: #ffffff;
+    border-color: #5D6B98;
+    border-width: 2px;
+    border-radius: 8px;
+
+    width: 100%;
+  }
+
+  .select__menu .css-14h4o58-menu {
+    cursor: pointer;
+    font-size: 14px;
+    color: #111322;
+    font-weight: 400;
+    background-color: #ffffff;
+    border-color: #5D6B98;
+    border-width: 2px;
+    border-radius: 8px;
+
+    width: 100%;
+  }
+
+  .css-tr4s17-option {
+    background-color: #111322;
+
+    cursor: pointer;
+  }
+
+  .css-d7l1ni-option {
+    background-color: #edeff3;
+
+    cursor: pointer;
+  }
+
+  .css-1nmdiq5-menu div::-webkit-scrollbar,
+  .css-14h4o58-menu div::-webkit-scrollbar {
+    width: 6px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+  }
+
+  .css-1nmdiq5-menu div::-webkit-scrollbar-thumb,
+  .css-14h4o58-menu div::-webkit-scrollbar-thumb {
+    background-color: #111322;
+    border-radius: 10px;
+  }
+
+  .css-1nmdiq5-menu div::-webkit-scrollbar-track,
+  .css-14h4o58-menu div::-webkit-scrollbar-track {
+    background-color: #F9F9FB;
+    border-radius: 10px;
+  }
+
+  .css-1u9des2-indicatorSeparator,
+  .select__indicator-separator,
+  .css-894a34-indicatorSeparator {
+    display: none;
+  }
+
+  .css-1xc3v61-indicatorContainer {
+    color: #404968;
+  }
+
+  .css-15lsz6c-indicatorContainer {
+    color: #111322;
+  }
+
+  .css-15lsz6c-indicatorContainer:hover {
+    color: #404968;
+  }
+
+  .css-1xc3v61-indicatorContainer:hover {
+    color: #404968;
+  }
+}
